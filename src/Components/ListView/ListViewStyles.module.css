@@ -1,0 +1,96 @@
+.bodyContainer{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 6rem 6rem 6rem;
+    font-family: 'poppins', sans-serif;
+}
+.topPicks{
+    display: flex;
+    color: white;
+    width: 15vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 .3rem 1.1rem;
+}
+.topPicks{
+
+}
+.beforeLine{
+    background-color: rgb(255, 204, 0);
+    width: .4rem;
+    height: 2rem;
+    border-radius: .2rem;
+}
+.moviecardsContainer{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cardContainer{
+    width: 25vw;
+    height: 100%;
+    /* box-shadow: 0px 1px 12px -2px rgb(255, 255, 255); */
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: .5rem;
+    overflow: hidden;
+    margin: 1rem;
+    transition: all .3s ease-in;
+    padding: .3rem;
+}
+.cardContainer:hover{
+    transform: scale(1.05);
+}
+.parentCardImg{
+    width: 100%;
+    height: 80%;
+}
+.cardImg{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.parentCardDetails{
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    height: 20%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.parentCardDetails li{
+    list-style: none;
+    color: white;
+}
+.parentCardDetails li i{
+    color: rgb(255, 204, 0);
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    opacity: .8;
+}
+.moreDetails button{
+    width: 100%;
+    background-color: rgba(44,44,44,255);
+    border: none;
+    padding: .3rem;
+    border-radius: .3rem;
+    color: rgba(52,100,214,255);
+    font-weight: 600;
+}
+
+@media (max-width:1254px){
+    .cardContainer{
+        width: 35vw;
+    }
+}
+@media (max-width:864px){
+    .cardContainer{
+        width: 50vw;
+    }
+}

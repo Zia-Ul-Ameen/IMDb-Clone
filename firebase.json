@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "io factory project/IMDb/IMDB_CLONE",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

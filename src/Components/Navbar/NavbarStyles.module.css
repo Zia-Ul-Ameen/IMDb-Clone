@@ -1,0 +1,147 @@
+.parentNavbar{
+    width: 100%;
+    height: 3.5rem;
+    background-color: #121212;
+    position: relative;
+  }
+  .navbar{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 1rem;
+    gap: 5rem;
+  }
+.logo{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+  }
+.logo img{
+    width: 5rem;
+    height: 2.5rem;
+  }
+.movieAndTv{
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+  }
+  .movieHover{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+    position: relative;
+  }
+  .searchBtn{
+    margin-left: .3rem;
+    width: 40%;
+    height: 1.8rem;
+    border: none;
+    background-color: white;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchBtn input{
+    padding-left: 1rem;
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .searchBtn button{
+    width: 10%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    border-left: 2px solid #121212;
+  }
+  .searchBtn button:hover{
+    background-color:#f5c518;
+    border-radius: 0 .3rem .3rem 0;
+  }
+.login {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+.login li{
+    color: white;
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+    padding: .2rem;
+    border-radius: .2rem;
+  }
+.signin, .signup:hover, .login li:hover{
+    background-color: #f5c518 ;
+    color: black;
+  }
+  
+  
+  /* rest */
+  .restMovies{
+    background-color: rgb(255, 255, 255);
+    width: 30rem;
+    padding: 1rem;
+    position: absolute;
+    border-radius: .2rem;
+    font-family: 'poppins', sans-serif;
+    display: none;
+    transform: translate(-31%);
+    z-index: 5;
+  }
+  .restMovies ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: .3rem;
+  }
+  .restMovies ul li{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+    width: 6vw;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .selectedFilter{
+    text-align: center;
+    border-radius: 8px;
+    background-color: #e6e6e6;
+  }
+  
+  .restMovies ul li::after{
+    content: '';
+    width: 0;
+    height: 1.5px;
+    border-radius: .2px;
+    background-color: rgb(25, 101, 223);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .2s ease-in;
+  }
+.restMovies ul li:hover::after{
+    width: 100%;
+  }
+  
+  .hoverYellow:hover{
+    color: #f5c518;
+  }
+  .movieHover:hover .restMovies{
+        display: flex;
+  }
+  @media (max-width:600px){
+    .searchBtn{
+      width: 30vw;
+    }
+    .movieAndTv{
+      width:20vw;
+    }
+  }
